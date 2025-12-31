@@ -16,7 +16,6 @@ result = subprocess.run(
     text=True
 )
 
-# ✅ CLEAN THE OCR OUTPUT HERE
 ocr_text = result.stdout
 ocr_text = " ".join(ocr_text.replace("\f", "").split())
 
