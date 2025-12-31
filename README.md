@@ -49,6 +49,19 @@ python3 typer.py
 It will prompt you with flameshot to select a region to type out, and then it will give you a
 2 second delay to help you focus on the client window. After 2 seconds, it will type out
 the region of text that was captured.
+<br>
+<br>
+
+If you want to make the program type even faster, all you need to do is go into the file and adjust the last line where it says : 
+
+```
+pyautogui.typewrite(ocr_text, interval=0.075)
+```
+
+Just adjust the interval to be shorter and it will type it faster.
+Please note that some websites may not handle speeds as fast as a 0.001 second delay.
+<br>
+<br>
 
 I hope you like this project. Star it so that other people will see it too.
 
